@@ -1,0 +1,10 @@
+name: hypso-conway
+channels:
+  - javascript
+  - default
+dependencies:
+  - python=3.7
+  - numpy=1.19.*
+  - matplotlib=3.2.2
+  - pylint=2.5.3
+  - autopep8=1.5.4
