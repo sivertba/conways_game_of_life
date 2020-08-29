@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import life_game as lg
 import os
 
+
 def main():
     if not os.path.exists('results'):
         os.makedirs('results')
@@ -23,10 +24,12 @@ def main():
         biggerBoard = nextBoard.repeat(sizeup, axis=0)
         biggerBoard = biggerBoard.repeat(sizeup, axis=1)
 
-        plt.imshow(biggerBoard,'gray')
+        plt.imshow(biggerBoard, 'gray')
         plt.savefig(str("results/test%d.png" % it), bbox_inches='tight')
+        plt.close('all')
 
         board = nextBoard
-        print("iteration ", it+1,"/",iterations)
+        print("iteration ", it + 1, "/", iterations)
+
 
 main()
