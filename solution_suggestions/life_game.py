@@ -185,7 +185,7 @@ def get_next_board(Board):
             if paddedBoard[r][c] == 1:
                 if numNeighbours < 2:
                     nextBoard[r - 1][c - 1] = 0
-                elif numNeighbours == 2 or numNeighbours == 3:
+                elif numNeighbours in (2, 3):
                     nextBoard[r - 1][c - 1] = 1
                 else:
                     nextBoard[r - 1][c - 1] = 0
